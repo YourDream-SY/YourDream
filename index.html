@@ -239,6 +239,619 @@
 
       <small>
         Պատվերը կուղարկվի WhatsApp-ով։
+/* =================================
+   YOUR DREAM - BEAUTY & SKINCARE
+   Modern Minimal Beige Design
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #faf8f4;
+  color: #39352f;
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+  text-align: center;
+  background: #e9e0d4;
+  padding: 9px;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+/* HEADER */
+
+.header {
+  height: 88px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #faf8f4;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  letter-spacing: .12em;
+  line-height: 1.05;
+}
+
+.logo span {
+  color: #a48c72;
+}
+
+.logo small {
+  display: block;
+  font: 9px "DM Sans", sans-serif;
+  letter-spacing: .28em;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.header nav {
+  display: flex;
+  gap: 34px;
+  font-size: 12px;
+}
+
+.header nav a:hover {
+  color: #a48c72;
+}
+
+.cart-button {
+  border: 1px solid #b7a38e;
+  background: transparent;
+  padding: 11px 17px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cart-button span {
+  background: #a48c72;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin-left: 7px;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background: #eee7dd;
+}
+
+.hero-copy {
+  padding: 100px 8% 90px 15%;
+  align-self: center;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .22em;
+  color: #9b8268;
+  font-weight: 700;
+}
+
+.hero h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5vw, 69px);
+  margin: 22px 0;
+}
+
+.hero h1 em,
+h2 em {
+  font-weight: 500;
+  color: #a48c72;
+}
+
+.hero-text {
+  max-width: 370px;
+  line-height: 1.9;
+  color: #71695f;
+  font-size: 14px;
+  margin-bottom: 34px;
+}
+
+.primary-link,
+.light-link {
+  display: inline-flex;
+  gap: 35px;
+  align-items: center;
+  padding: 15px 22px;
+  background: #4b443c;
+  color: white;
+  font-size: 10px;
+  letter-spacing: .15em;
+  transition: .3s;
+}
+
+.primary-link:hover {
+  background: #a48c72;
+}
+
+.hero-image {
+  background: url("https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=1300&q=85") center/cover;
+  min-height: 590px;
+}
+
+.hero-note {
+  position: absolute;
+  bottom: 24px;
+  right: 4%;
+  font-size: 9px;
+  letter-spacing: .24em;
+  color: #71695f;
+}
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  padding: 95px 20px 80px;
+}
+
+.intro h2,
+.about h2 {
+  font-size: clamp(34px, 4vw, 49px);
+  margin: 17px 0;
+}
+
+.intro > p:last-child {
+  font-size: 13px;
+  color: #777067;
+}
+
+/* PRODUCTS */
+
+.products-section {
+  padding: 35px 7% 105px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  margin: 8px 0;
+}
+
+.section-heading > span {
+  font-size: 10px;
+  color: #8b8379;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #f0ece5;
+  padding-bottom: 18px;
+  transition: .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: 15px 15px 0;
+}
+
+.product-info h3 {
+  font: 18px "Playfair Display", serif;
+  margin: 0 0 7px;
+}
+
+.product-info p {
+  font-size: 11px;
+  color: #81796f;
+  margin: 0 0 14px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.add-button {
+  border: 1px solid #9f8b75;
+  background: transparent;
+  padding: 9px 12px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.add-button:hover {
+  background: #4b443c;
+  color: white;
+}
+
+/* BANNER */
+
+.banner {
+  text-align: center;
+  background: #b9a58f;
+  color: white;
+  padding: 85px 20px;
+}
+
+.banner .eyebrow {
+  color: #f2e9de;
+}
+
+.banner h2 {
+  font-size: clamp(34px, 4vw, 50px);
+  margin: 18px 0 28px;
+}
+
+.banner h2 em {
+  color: #f3e7d9;
+}
+
+.light-link {
+  background: #f8f4ee;
+  color: #4b443c;
+}
+
+.light-link:hover {
+  background: #4b443c;
+  color: white;
+}
+
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9%;
+  align-items: center;
+  padding: 100px 12%;
+}
+
+.about-image {
+  min-height: 390px;
+  background: url("https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85") center/cover;
+}
+
+.about h2 {
+  font-size: 46px;
+}
+
+.about p:last-child {
+  font-size: 13px;
+  line-height: 2;
+  color: #71695f;
+  max-width: 440px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #eae3d9;
+  padding: 55px 8% 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+  font-size: 12px;
+}
+
+footer h3 {
+  font-size: 10px;
+  letter-spacing: .15em;
+  margin: 0 0 18px;
+}
+
+footer p {
+  color: #756d63;
+}
+
+footer a:hover {
+  color: #a48c72;
+}
+
+footer > div > a:not(.logo) {
+  display: block;
+  margin: 10px 0;
+}
+
+.copyright {
+  grid-column: 1/-1;
+  border-top: 1px solid #d4c9bc;
+  padding-top: 20px;
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+/* SHOPPING CART */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #201b16a6;
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s;
+  z-index: 5;
+}
+
+.overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: min(440px, 100%);
+  background: #faf8f4;
+  z-index: 6;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(105%);
+  transition: .3s;
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3dbd1;
+  padding-bottom: 18px;
+}
+
+.drawer-head h2 {
+  font-size: 27px;
+  margin: 0;
+}
+
+.drawer-head button {
+  border: 0;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-items {
+  flex: 1;
+  overflow: auto;
+  padding: 15px 0;
+}
+
+.empty-cart {
+  color: #80776d;
+  font-size: 13px;
+}
+
+.cart-row {
+  display: grid;
+  grid-template-columns: 65px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e9e2d9;
+}
+
+.cart-row img {
+  width: 65px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.cart-row h4 {
+  font: 16px "Playfair Display", serif;
+  margin: 0 0 5px;
+}
+
+.cart-row small {
+  color: #81796f;
+}
+
+.quantity {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.quantity button {
+  border: 1px solid #c9bcae;
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.remove {
+  border: 0;
+  background: none;
+  color: #8d6f5a;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.drawer-bottom {
+  border-top: 1px solid #e3dbd1;
+  padding-top: 18px;
+}
+
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.checkout-button {
+  width: 100%;
+  border: 0;
+  background: #4b443c;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  font: 11px "DM Sans", sans-serif;
+  letter-spacing: .1em;
+}
+
+.checkout-button:hover {
+  background: #a48c72;
+}
+
+.drawer-bottom small {
+  display: block;
+  color: #82796f;
+  line-height: 1.6;
+  margin-top: 12px;
+  font-size: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:800px) {
+
+  .header {
+    padding: 0 5%;
+    height: 76px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    padding: 70px 9%;
+  }
+
+  .hero-image {
+    min-height: 360px;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .products-section {
+    padding: 30px 5% 70px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > span {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    padding: 65px 8%;
+    gap: 35px;
+  }
+
+  .about-image {
+    min-height: 300px;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1/-1;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:420px) {
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-info {
+    padding: 12px 9px 0;
+  }
+
+  .product-info h3 {
+    font-size: 15px;
+  }
+
+  .add-button {
+    padding: 8px;
+    font-size: 9px;
+  }
+
+  .product-bottom {
+    gap: 5px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+}
+
         Վճարման և առաքման պայմանները կհաստատեք հաղորդագրությամբ։
       </small>
 
